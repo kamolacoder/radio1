@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+span, a, label {
+    display: inline-block;
+}
+*::after,*::before{
+    box-sizing: border-box;
+}
+.big{
+    background-color: #18161B;
+    max-width: 500px;
+    margin:100px auto;
+    padding:30px;   
+}
+.form{
+max-width: 300px;
+align-items: center;
+margin:auto;
+align-items: center;
+margin: 40px auto;
+}
+.div1{
+    color: white;
+    padding: 10px;
+}
+.div21{
+    margin-bottom: 10px;
+}
+.span2{
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+.div21{
+    border: 3px solid #5151F0;
+    border-radius: 10px;
+}
+.span1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #5151F0;
+    margin-left: 10px;
+    position: relative;
+    transition: 0.2s all linear ;
+}
+.inp1:checked ~ .span1{
+    border-color: #5151F0;
+}
+.span1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    inset: 0;
+    margin:auto;
+    background-color: #5151F0;
+    transition: 0.2s all linear;
+    left: -95%;
+    opacity: 0;
+}
+.inp1:checked ~ .span1::before{
+    opacity: 1;
+    transform: scale(0.2);
+}
+.lbl{
+    align-items: center;
+    display: inline-flex;
+}
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
